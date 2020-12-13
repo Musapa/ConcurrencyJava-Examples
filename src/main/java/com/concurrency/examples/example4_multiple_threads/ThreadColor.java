@@ -1,7 +1,7 @@
-package com.concurrency.examples;
+package com.concurrency.examples.example4_multiple_threads;
 
-public class ConcurrencyExample1 {
-
+public class ThreadColor {
+	
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
 	public static final String ANSI_RED = "\u001B[31m";
@@ -11,16 +11,4 @@ public class ConcurrencyExample1 {
 	public static final String ANSI_PURPLE = "\u001B[35m";
 	public static final String ANSI_CYAN = "\u001B[36m";
 	public static final String ANSI_WHITE = "\u001B[37m";
-	
-	public static void main(String[] args) {
-		System.out.println(ANSI_RED + "Hello from the main thread." + ANSI_RESET);
-
-		new Thread() {
-			public void run() {
-				System.out.println(ANSI_GREEN + "Hello from the anonymous class thread." + ANSI_RED);
-			}
-		}.start();
-
-		System.out.println(ANSI_RED + "Hello again from the main thread." + ANSI_RED);
-	}
 }
