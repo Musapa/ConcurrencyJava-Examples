@@ -40,7 +40,7 @@ public class Main implements Callable<String> {
 				e.printStackTrace();
 			}
 		}
-		// shut down the executor service now
+		// shut down the executor service noww
 		executor.shutdown();
 	}
 
